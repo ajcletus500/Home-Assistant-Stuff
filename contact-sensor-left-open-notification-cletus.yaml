@@ -49,22 +49,6 @@ blueprint:
       default: []
       selector:
         condition:
-    delete_notification:
-      name: 🗑️ Delete notification when not in issue state anymore.
-      description: |
-        Do you want the notification to be deleted automatically when the device state is not in the issue state anymore.
-      default: true
-      selector:
-        boolean:
-    duration_from_issue_state:
-      name: ⏰ Time from issue state before alert removal
-      description: |
-        The amount of time that the device has not been in the issue state before the alert gets removed.
-      default:
-        seconds: 5
-      selector:
-        duration:
-          enable_day: true
     notify_services_string:
       name: 📲 Notify Services
       description: |
