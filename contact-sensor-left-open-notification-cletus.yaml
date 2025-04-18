@@ -61,7 +61,7 @@ blueprint:
       name: 🔗 Click URL
       description: |
         Where the user will be taken if they tap the notification. (e.g., `/lovelace/kitchen`). See [documentation](https://companion.home-assistant.io/docs/notifications/notifications-basic/#opening-a-url) for details.
-      default: "/lovelace/ROOM"
+      default: "/ui-lovelace-minimalist"
       selector:
         text:
     notification_title:
