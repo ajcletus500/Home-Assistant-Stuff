@@ -19,6 +19,9 @@ blueprint:
             domain:
               - binary_sensor
               - input_boolean
+            device_class:
+              - battery
+              - switch
     friendly_name:
       name: 🏷️ Custom Device Friendly Name
       description: What should we call the entity in the notification? (e.g. Fridge). Defaults the entities `friendly_name` if left empty. This also supports enumeration with [`binary_sensor` groups](https://www.home-assistant.io/integrations/group/#binary-sensor-light-and-switch-groups).
