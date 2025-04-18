@@ -70,7 +70,7 @@ blueprint:
       description: |
         The service that will be called to deliver the notification. (e.g., `notify.mobile_app_my_phone`).
         It also supports multiple services, separated by a comma. (e.g., `notify.mobile_app_my_phone,notify.mobile_app_my_spouse_phone`).
-      default: "notify.mobile_app_<your_device_id_here>"
+      default: "notify.mobile_app_oneplus_14_pro"
       selector:
         text:
     notification_click_url:
