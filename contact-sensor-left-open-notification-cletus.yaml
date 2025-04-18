@@ -164,8 +164,6 @@ variables:
   issue_state: !input issue_state
   duration_issue_state: !input duration_issue_state
   condition_send_notification: !input condition_send_notification
-  delete_notification: !input delete_notification
-  duration_from_issue_state: !input duration_from_issue_state
   notify_services_string: !input notify_services_string
   notification_click_url: !input notification_click_url
   notification_title: !input notification_title
