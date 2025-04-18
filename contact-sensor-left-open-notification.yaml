@@ -12,6 +12,7 @@ blueprint:
       name: 🤖 Entity
       description: |
         The entity that will trigger the automation. This must be a `binary_sensor` or `input_boolean`. (e.g., `binary_sensor.fridge`)
+      default: {entity_id: []}
       selector:
         entity:
           domain:
