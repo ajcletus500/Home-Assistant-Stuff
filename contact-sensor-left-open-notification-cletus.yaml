@@ -49,6 +49,22 @@ blueprint:
       default: []
       selector:
         condition:
+    delete_notification:
+      name: 🗑️ Delete notification when not in issue state anymore.
+      description: |
+        Do you want the notification to be deleted automatically when the device state is not in the issue state anymore.
+      default: true
+      selector:
+        boolean:
+    duration_from_issue_state:
+      name: ⏰ Time from issue state before alert removal
+      description: |
+        The amount of time that the device has not been in the issue state before the alert gets removed.
+      default:
+        seconds: 5
+      selector:
+        duration:
+          enable_day: true
     notify_services_string:
       name: 📲 Notify Services
       description: |
@@ -61,7 +77,7 @@ blueprint:
       name: 🔗 Click URL
       description: |
         Where the user will be taken if they tap the notification. (e.g., `/lovelace/kitchen`). See [documentation](https://companion.home-assistant.io/docs/notifications/notifications-basic/#opening-a-url) for details.
-      default: "/ui-lovelace-minimalist"
+      default: "/lovelace/ROOM"
       selector:
         text:
     notification_title:
@@ -164,6 +180,8 @@ variables:
   issue_state: !input issue_state
   duration_issue_state: !input duration_issue_state
   condition_send_notification: !input condition_send_notification
+  delete_notification: !input delete_notification
+  duration_from_issue_state: !input duration_from_issue_state
   notify_services_string: !input notify_services_string
   notification_click_url: !input notification_click_url
   notification_title: !input notification_title
