@@ -208,7 +208,7 @@ action:
   - variables:
       notify_services_list: "{{ notify_services_string.split(',') }}"
       number_of_notify_services: "{{ notify_services_list | count }}"
-      notification_tag: "{{ trigger_entity }}-{{ custom_friendly_name[-20:] }}-{{ notify_services_string[-20:] }}"
+      notification_tag: "{{ custom_friendly_name[-20:] }}-{{ notify_services_string[-20:] }}"
       initially_triggered_at: "{{ now() }}"
   - choose:
       - conditions:
