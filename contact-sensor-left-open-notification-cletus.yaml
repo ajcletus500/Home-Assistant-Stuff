@@ -16,9 +16,6 @@ blueprint:
       selector:
         target:
           entity:
-            domain:
-              - binary_sensor
-              - input_boolean
             device_class:
               - door
               - window
